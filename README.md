@@ -1,15 +1,15 @@
-#Trace Route Utility implementation
+# Trace Route Utility implementation
 
 Python implementation of Trace Route utility
 
-##Requirements
+## Requirements
 Installed Python
 
-##How to run
+## How to run
 You must be in root, use command:
 
 `sudo python3 tracert.py [destination_name]`
-##Examples
+## Examples
 ```
 sudo python3 tracert.py yandex.ru
 ```     
