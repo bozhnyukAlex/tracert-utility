@@ -74,9 +74,6 @@ def trace_route(dest_name):
         sender_socket.close()
         receiver_socket.close()
 
-        if not finished:
-            pass
-
         if curr_address is not None:
             curr_host = "%s (%s)" % (curr_name, curr_address)
         else:
