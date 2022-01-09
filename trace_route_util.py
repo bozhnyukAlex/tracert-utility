@@ -31,9 +31,9 @@ def receive_packages(rec_socket: socket.socket, curr_address, curr_name, finishe
     tries = 3
     while not finished and tries > 0:
         try:
-            _, curr_address = rec_socket.recvfrom(512)
+            _, curr_addresses = rec_socket.recvfrom(512)
             finished = True
-            curr_address = curr_address[0]
+            curr_address = curr_addresses[0]
             try:
                 curr_name = socket.gethostbyaddr(curr_address)[0]
             except socket.error:
